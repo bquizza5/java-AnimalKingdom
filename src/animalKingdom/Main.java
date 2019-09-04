@@ -96,6 +96,15 @@ public class Main {
         namedIn1758.sort((v1, v2) -> v1.getName().compareToIgnoreCase(v2.getName()));
         System.out.println(namedIn1758);
 
+        //stretch
+        ArrayList<Animals> mammals = new ArrayList<Animals>();
+        System.out.println("\n*** Stretch: just Mammals ***\n");
+        animalList.forEach(animal -> {
+            if (animal instanceof Mammals) {
+                mammals.add(animal);
+            }
+        });
+        System.out.println(mammals);
 
     }
 }
