@@ -87,13 +87,13 @@ public class Main {
         });
 
         ArrayList<Animals> namedIn1758 = new ArrayList<Animals>();
-        System.out.println("\n*** only named in 1758 ***\n");
+        System.out.println("\n*** only named in 1758 alphabetized ***\n");
         animalList.forEach(animal -> {
             if (animal.getYearDiscovered() == 1758) {
                 namedIn1758.add(animal);
             }
         });
-
+        namedIn1758.sort((v1, v2) -> v1.getName().compareToIgnoreCase(v2.getName()));
         System.out.println(namedIn1758);
 
 
