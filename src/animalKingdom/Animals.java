@@ -35,7 +35,8 @@ public abstract class Animals {
 
     @Override
     public String toString() {
-        return "name: " + name + "\n" + 
-            "year Discovered: " + yearDiscovered + "\n";
+        return "{ID: " + id +
+            ", name: " + name + 
+            ", yearDiscovered: " + yearDiscovered + "}\n";
     }
 }
